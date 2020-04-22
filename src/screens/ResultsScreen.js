@@ -29,7 +29,7 @@ const ResultsScreen = ({ route }) => {
                 data={result.photos}
                 keyExtractor={(photo) => photo}
                 renderItem={({ item }) => {
-                    return <Image source={ item ? { uri: item } : null} style={styles.image} />
+                    return <Image source={{ uri: item }} style={styles.image} />
                 }}
             />
         </View>
